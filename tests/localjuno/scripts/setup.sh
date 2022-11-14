@@ -41,17 +41,18 @@ edit_genesis () {
 
 add_genesis_accounts () {
 
-    junod add-genesis-account juno1jxa3ksucx7ter57xyuczvmk6qkeqmqvj37g237 100000000000ujuno --home $JUNO_HOME # val
-    junod add-genesis-account juno1cyyzpxplxdzkeea7kwsydadg87357qnaf5xk87 100000000000ujuno --home $JUNO_HOME # lo-test1
-    junod add-genesis-account juno18s5lynnmx37hq4wlrw9gdn68sg2uxp5rkl63az 100000000000ujuno --home $JUNO_HOME
-    junod add-genesis-account juno1qwexv7c6sm95lwhzn9027vyu2ccneaqanu7v8n 100000000000ujuno --home $JUNO_HOME
-    junod add-genesis-account juno14hcxlnwlqtq75ttaxf674vk6mafspg8xsprc9l 100000000000ujuno --home $JUNO_HOME
-    junod add-genesis-account juno12rr534cer5c0vj53eq4y32lcwguyy7nnnzlhm9 100000000000ujuno --home $JUNO_HOME
-    junod add-genesis-account juno1nt33cjd5auzh36syym6azgc8tve0jlvkp6s4rw 100000000000ujuno --home $JUNO_HOME
-    junod add-genesis-account juno10qfrpash5g2vk3hppvu45x0g860czur8hqy0hp 100000000000ujuno --home $JUNO_HOME
-    junod add-genesis-account juno1f4tvsdukfwh6s9swrc24gkuz23tp8pd38vnlcn 100000000000ujuno --home $JUNO_HOME
-    junod add-genesis-account juno1myv43sqgnj5sm4zl98ftl45af9cfzk7nfmke3e 100000000000ujuno --home $JUNO_HOME
-    junod add-genesis-account juno14gs9zqh8m49yy9kscjqu9h72exyf295ahp2aec 100000000000ujuno --home $JUNO_HOME # lo-test10
+    junod add-genesis-account juno1jxa3ksucx7ter57xyuczvmk6qkeqmqvj37g237 10000000ujuno --home $JUNO_HOME # val
+    junod add-genesis-account juno1cyyzpxplxdzkeea7kwsydadg87357qnaf5xk87 10000000ujuno --home $JUNO_HOME # lo-test1
+    junod add-genesis-account juno18s5lynnmx37hq4wlrw9gdn68sg2uxp5rkl63az 10000000ujuno --home $JUNO_HOME
+    junod add-genesis-account juno1qwexv7c6sm95lwhzn9027vyu2ccneaqanu7v8n 10000000ujuno --home $JUNO_HOME
+    junod add-genesis-account juno14hcxlnwlqtq75ttaxf674vk6mafspg8xsprc9l 10000000ujuno --home $JUNO_HOME
+    junod add-genesis-account juno12rr534cer5c0vj53eq4y32lcwguyy7nnnzlhm9 10000000ujuno --home $JUNO_HOME
+    junod add-genesis-account juno1nt33cjd5auzh36syym6azgc8tve0jlvkp6s4rw 10000000ujuno --home $JUNO_HOME
+    junod add-genesis-account juno10qfrpash5g2vk3hppvu45x0g860czur8hqy0hp 10000000ujuno --home $JUNO_HOME
+    junod add-genesis-account juno1f4tvsdukfwh6s9swrc24gkuz23tp8pd38vnlcn 10000000ujuno --home $JUNO_HOME
+    junod add-genesis-account juno1myv43sqgnj5sm4zl98ftl45af9cfzk7nfmke3e 10000000ujuno --home $JUNO_HOME
+    junod add-genesis-account juno14gs9zqh8m49yy9kscjqu9h72exyf295ahp2aec 10000000ujuno --home $JUNO_HOME # lo-test10
+    junod add-genesis-account juno10wg2hpn04r9yt9r52mu53xjcetvqunrv2s6k4y 10000000000000ujuno --home $JUNO_HOME # lo-test11
 
     echo $MNEMONIC | junod keys add $MONIKER --recover --keyring-backend=test --home $JUNO_HOME
     junod gentx $MONIKER 500000000ujuno --keyring-backend=test --chain-id=$CHAIN_ID --home $JUNO_HOME

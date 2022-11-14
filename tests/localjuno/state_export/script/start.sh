@@ -8,7 +8,7 @@ CONFIG_FOLDER=$JUNO_HOME/config
 
 # val - juno1jxa3ksucx7ter57xyuczvmk6qkeqmqvj37g237
 DEFAULT_MNEMONIC="blame tube add leopard fire next exercise evoke young team payment senior know estate mandate negative actual aware slab drive celery elevator burden utility"
-DEFAULT_CHAIN_ID="localjuno"
+DEFAULT_CHAIN_ID="uni-6"
 DEFAULT_MONIKER="val"
 
 # Override default values with environment variables
