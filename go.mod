@@ -133,6 +133,8 @@ require (
 replace (
 	// use cosmos protocol buffers
 	github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.3-alpha.regen.1
+	// use mev-tendermint
+	github.com/tendermint/tendermint => github.com/skip-mev/mev-tendermint v0.34.24-mev.15
 	// use grpc compatible with cosmos protocol buffers
 	google.golang.org/grpc => google.golang.org/grpc v1.33.2
 )
